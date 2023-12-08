@@ -1,0 +1,66 @@
+# based on https://github.com/mvdan/github-actions-golang
+name: Generate
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  generate:
+    if: (github.actor != 'github-actions[bot]')
+    permissions:
+      contents: write
+      pull-requests: write
+    strategy:
+      matrix:
+        php-version: [8.1]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: grpc, protobuf
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+
+      # cache php dependencies
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.composer/cache
+            vendor
+          key: ${{ runner.os }}-php-${{ matrix.php-version }}-${{ hashFiles('**/composer.lock') }}
+
+      - name: Get current submodule hash
+        run: echo "COMMIT_HASH=$(git rev-parse HEAD:src)" >> $GITHUB_ENV
+
+      - name: Update submodules
+        run: git submodule update --init --recursive --remote
+
+      - name: Clean up
+        run: ls -l src | grep '^d' | awk -F ' ' '{print $9}' | xargs -I {} rm -rf {}
+
+      - name: Lint proto files
+        run: make protolint
+
+      - name: Generate proto files
+        run: make proto
+
+      - name: Get commits since last COMMIT_HASH in submodule
+        run: |
+          cd src
+          echo "COMMIT_MSG=$(git log --no-merges --pretty=format:"%s [gsols/proto-apis@%H]" --reverse $COMMIT_HASH..HEAD)" >> $GITHUB_ENV
+          cd ..
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "${{env.COMMIT_MSG}}"
+          title: "Build proto files using remote submodule"
+          body: "${{env.COMMIT_MSG}}"
