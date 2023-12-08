@@ -44,13 +44,16 @@ jobs:
         run: git submodule update --init --recursive --remote
 
       - name: Clean up
-        run: ls -l src | grep '^d' | awk -F ' ' '{print $9}' | xargs -I {} rm -rf {}
+        run: rm -fr src
 
       - name: Lint proto files
         run: make protolint
 
       - name: Generate proto files
         run: make proto
+
+      - name: Fix directory structure
+        run: mv src/GSols/PHPProto/* src && rm -fr src/GSols
 
       - name: Get commits since last COMMIT_HASH in submodule
         run: |

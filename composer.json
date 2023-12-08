@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "GSols\\Proto\\": "src/"
+      "GSols\\PHPProto\\": "src/"
     }
   },
   "require": {

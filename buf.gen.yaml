@@ -1,6 +1,6 @@
 version: v1
 plugins:
   - name: php
-    out: .
+    out: src
   - plugin: buf.build/grpc/php
-    out: .
+    out: src
