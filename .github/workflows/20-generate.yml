@@ -38,7 +38,7 @@ jobs:
           key: ${{ runner.os }}-php-${{ matrix.php-version }}-${{ hashFiles('**/composer.lock') }}
 
       - name: Get current submodule hash
-        run: echo "COMMIT_HASH=$(git rev-parse HEAD:src)" >> $GITHUB_ENV
+        run: echo "COMMIT_HASH=$(git rev-parse HEAD:proto)" >> $GITHUB_ENV
 
       - name: Update submodules
         run: git submodule update --init --recursive --remote
