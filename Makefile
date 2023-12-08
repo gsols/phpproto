@@ -16,7 +16,7 @@ GO_DEPENDENCIES = github.com/bufbuild/buf/cmd/buf \
 define make-go-dependency
   # target template for go tools, can be referenced e.g. via /bin/<tool>
   bin/$(notdir $1):
-	GOBIN=$(PWD)/bin go install $1
+	GOBIN=$(PWD)/bin go install $1@latest
 endef
 
 # this creates a target for each go dependency to be referenced in other targets
@@ -26,14 +26,14 @@ $(foreach dep, $(GO_DEPENDENCIES), $(eval $(call make-go-dependency, $(dep))))
 proto/buf.lock: bin/buf
 	@bin/buf mod update src
 
-protolint: proto/buf.lock bin/protoc-gen-buf-lint ## Lints your protobuf files
+protolint: proto/buf.lock ## Lints your protobuf files
 	bin/buf lint
 
 #protobreaking: proto/buf.lock bin/protoc-gen-buf-breaking ## Compares your current protobuf with the version on master to find breaking changes
 #	bin/buf breaking --against '.git#branch=main'
 
 proto: ## Generates code from protobuf files
-proto:  proto/buf.lock bin/protoc-gen-go bin/protoc-gen-go-grpc bin/protoc-gen-validate
+proto:  proto/buf.lock
 	PATH=$(PWD)/bin:$$PATH buf generate
 
 
