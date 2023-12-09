@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/gsols/phpproto/compare/v0.0.2...v0.0.3) (2023-12-09)
+
+
+### Features
+
+* add validate stubs ([14a4399](https://github.com/gsols/phpproto/commit/14a4399d36e3bae9bdeb7c70c8980aa1bc359513))
+
 ## [0.0.2](https://github.com/gsols/phpproto/compare/v0.0.1...v0.0.2) (2023-12-09)
 
 
