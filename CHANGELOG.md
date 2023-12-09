@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/gsols/phpproto/compare/v0.0.1...v0.0.2) (2023-12-09)
+
+
+### Features
+
+* add common protos pkg ([dabc494](https://github.com/gsols/phpproto/commit/dabc4941daabc78e81582bb55cbfc34e6110c498))
+
 ## 0.0.1 (2023-12-08)
 
 
