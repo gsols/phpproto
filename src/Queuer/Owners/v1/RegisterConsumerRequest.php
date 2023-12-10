@@ -18,9 +18,9 @@ class RegisterConsumerRequest extends \Google\Protobuf\Internal\Message
      */
     protected $owner_id = '';
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Consumer consumer = 2 [json_name = "consumer"];</code>
+     * Generated from protobuf field <code>string consumer_id = 2 [json_name = "consumerId", (.validate.rules) = {</code>
      */
-    protected $consumer = null;
+    protected $consumer_id = '';
 
     /**
      * Constructor.
@@ -29,7 +29,7 @@ class RegisterConsumerRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $owner_id
-     *     @type \GSols\PHPProto\Queuer\Entities\v1\Consumer $consumer
+     *     @type string $consumer_id
      * }
      */
     public function __construct($data = NULL) {
@@ -60,33 +60,23 @@ class RegisterConsumerRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Consumer consumer = 2 [json_name = "consumer"];</code>
-     * @return \GSols\PHPProto\Queuer\Entities\v1\Consumer|null
+     * Generated from protobuf field <code>string consumer_id = 2 [json_name = "consumerId", (.validate.rules) = {</code>
+     * @return string
      */
-    public function getConsumer()
+    public function getConsumerId()
     {
-        return $this->consumer;
-    }
-
-    public function hasConsumer()
-    {
-        return isset($this->consumer);
-    }
-
-    public function clearConsumer()
-    {
-        unset($this->consumer);
+        return $this->consumer_id;
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Consumer consumer = 2 [json_name = "consumer"];</code>
-     * @param \GSols\PHPProto\Queuer\Entities\v1\Consumer $var
+     * Generated from protobuf field <code>string consumer_id = 2 [json_name = "consumerId", (.validate.rules) = {</code>
+     * @param string $var
      * @return $this
      */
-    public function setConsumer($var)
+    public function setConsumerId($var)
     {
-        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\Consumer::class);
-        $this->consumer = $var;
+        GPBUtil::checkString($var, True);
+        $this->consumer_id = $var;
 
         return $this;
     }

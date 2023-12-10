@@ -14,11 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class PublishConsumerStatsRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
-     */
-    protected $consumer_id = '';
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 2 [json_name = "stats"];</code>
+     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 1 [json_name = "stats"];</code>
      */
     protected $stats = null;
 
@@ -28,7 +24,6 @@ class PublishConsumerStatsRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $consumer_id
      *     @type \GSols\PHPProto\Queuer\Entities\v1\Stats $stats
      * }
      */
@@ -38,29 +33,7 @@ class PublishConsumerStatsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
-     * @return string
-     */
-    public function getConsumerId()
-    {
-        return $this->consumer_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setConsumerId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->consumer_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 2 [json_name = "stats"];</code>
+     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 1 [json_name = "stats"];</code>
      * @return \GSols\PHPProto\Queuer\Entities\v1\Stats|null
      */
     public function getStats()
@@ -79,7 +52,7 @@ class PublishConsumerStatsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 2 [json_name = "stats"];</code>
+     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 1 [json_name = "stats"];</code>
      * @param \GSols\PHPProto\Queuer\Entities\v1\Stats $var
      * @return $this
      */

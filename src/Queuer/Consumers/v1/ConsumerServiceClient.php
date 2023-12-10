@@ -17,6 +17,20 @@ class ConsumerServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * @param \GSols\PHPProto\Queuer\Consumers\v1\RegisterConsumerInfoRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function RegisterConsumerInfo(\GSols\PHPProto\Queuer\Consumers\v1\RegisterConsumerInfoRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/queuer.consumers.v1.ConsumerService/RegisterConsumerInfo',
+        $argument,
+        ['\GSols\PHPProto\Queuer\Consumers\v1\RegisterConsumerInfoResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\ClientStreamingCall

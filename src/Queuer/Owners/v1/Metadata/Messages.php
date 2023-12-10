@@ -26,7 +26,7 @@ class Messages
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Result::initOnce();
         $pool->internalAddGeneratedFile(
             '
-¯	
+	
 queuer/owners/v1/messages.protoqueuer.owners.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.protoqueuer/entities/v1/owner.protoqueuer/entities/v1/stream.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/result.proto"1
 CreateOwnerRequest
 name (	BúBrRname"F
@@ -39,12 +39,13 @@ class Messages
 ListStreamsRequest#
 owner_id (	BúBr°RownerId"K
 ListStreamsResponse4
-streams (2.queuer.entities.v1.StreamRstreams"x
+streams (2.queuer.entities.v1.StreamRstreams"i
 RegisterConsumerRequest#
-owner_id (	BúBr°RownerId8
-consumer (2.queuer.entities.v1.ConsumerRconsumer"N
-RegisterConsumerResponse2
-result (2.queuer.entities.v1.ResultRresult":
+owner_id (	BúBr°RownerId)
+consumer_id (	BúBr°R
+consumerId"=
+RegisterConsumerResponse!
+issued_token (	RissuedToken":
 GetConsumersRequest#
 owner_id (	BúBr°RownerId"R
 GetConsumersResponse:

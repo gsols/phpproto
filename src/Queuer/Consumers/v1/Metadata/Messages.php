@@ -28,17 +28,19 @@ class Messages
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Result::initOnce();
         $pool->internalAddGeneratedFile(
             '
-ò
-"queuer/consumers/v1/messages.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.protoqueuer/entities/v1/result.proto"y
-PublishConsumerStatsRequest)
-consumer_id (	B˙Br∞R
-consumerId/
-stats (2.queuer.entities.v1.StatsRstats"R
+®
+"queuer/consumers/v1/messages.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.protoqueuer/entities/v1/result.proto"N
+PublishConsumerStatsRequest/
+stats (2.queuer.entities.v1.StatsRstats"R
 PublishConsumerStatsResponse2
-result (2.queuer.entities.v1.ResultRresult"H
-GetSubscribedStreamsRequest)
+result (2.queuer.entities.v1.ResultRresult"è
+RegisterConsumerInfoRequest)
 consumer_id (	B˙Br∞R
-consumerId"T
+consumerIdE
+consumer_info (2 .queuer.entities.v1.ConsumerInfoRconsumerInfo"R
+RegisterConsumerInfoResponse2
+result (2.queuer.entities.v1.ResultRresult"
+GetSubscribedStreamsRequest"T
 GetSubscribedStreamsResponse4
 streams (2.queuer.entities.v1.StreamRstreamsBÑZ/github.com/gsols/goproto/queuer/consumers/v1;v1 "GSols\\PHPProto\\Queuer\\Consumers\\v1‚+GSols\\PHPProto\\Queuer\\Consumers\\v1\\Metadatabproto3'
         , true);
