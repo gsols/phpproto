@@ -23,12 +23,13 @@ class Consumer
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Owner::initOnce();
         $pool->internalAddGeneratedFile(
             '
-û
-!queuer/entities/v1/consumer.protoqueuer.entities.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.protoqueuer/entities/v1/owner.proto"‘
+Š
+!queuer/entities/v1/consumer.protoqueuer.entities.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.protoqueuer/entities/v1/owner.proto"$
 Consumer
-id (	BúBr°Rid0
-host (2.queuer.entities.v1.HostInfoRhost9
-process (2.queuer.entities.v1.ProcessInfoRprocess"¤
+id (	BúBr°Rid"{
+ConsumerInfo0
+host (2.queuer.entities.v1.HostInfoRhost9
+process (2.queuer.entities.v1.ProcessInfoRprocess"¤
 HostInfo
 os (	BúBrRos
 arch (	BúBrRarch

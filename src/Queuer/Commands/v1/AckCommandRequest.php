@@ -14,17 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class AckCommandRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
-     */
-    protected $consumer_id = '';
-    /**
-     * Generated from protobuf field <code>string command_id = 2 [json_name = "commandId", (.validate.rules) = {</code>
+     * Generated from protobuf field <code>string command_id = 1 [json_name = "commandId", (.validate.rules) = {</code>
      */
     protected $command_id = '';
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.CommandStatus status = 3 [json_name = "status"];</code>
-     */
-    protected $status = 0;
 
     /**
      * Constructor.
@@ -32,9 +24,7 @@ class AckCommandRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $consumer_id
      *     @type string $command_id
-     *     @type int $status
      * }
      */
     public function __construct($data = NULL) {
@@ -43,29 +33,7 @@ class AckCommandRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
-     * @return string
-     */
-    public function getConsumerId()
-    {
-        return $this->consumer_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setConsumerId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->consumer_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string command_id = 2 [json_name = "commandId", (.validate.rules) = {</code>
+     * Generated from protobuf field <code>string command_id = 1 [json_name = "commandId", (.validate.rules) = {</code>
      * @return string
      */
     public function getCommandId()
@@ -74,7 +42,7 @@ class AckCommandRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string command_id = 2 [json_name = "commandId", (.validate.rules) = {</code>
+     * Generated from protobuf field <code>string command_id = 1 [json_name = "commandId", (.validate.rules) = {</code>
      * @param string $var
      * @return $this
      */
@@ -82,28 +50,6 @@ class AckCommandRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->command_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.CommandStatus status = 3 [json_name = "status"];</code>
-     * @return int
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.CommandStatus status = 3 [json_name = "status"];</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setStatus($var)
-    {
-        GPBUtil::checkEnum($var, \GSols\PHPProto\Queuer\Entities\v1\CommandStatus::class);
-        $this->status = $var;
 
         return $this;
     }

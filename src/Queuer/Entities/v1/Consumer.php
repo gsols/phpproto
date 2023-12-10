@@ -17,14 +17,6 @@ class Consumer extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string id = 1 [json_name = "id", (.validate.rules) = {</code>
      */
     protected $id = '';
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.HostInfo host = 2 [json_name = "host"];</code>
-     */
-    protected $host = null;
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.ProcessInfo process = 3 [json_name = "process"];</code>
-     */
-    protected $process = null;
 
     /**
      * Constructor.
@@ -33,8 +25,6 @@ class Consumer extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $id
-     *     @type \GSols\PHPProto\Queuer\Entities\v1\HostInfo $host
-     *     @type \GSols\PHPProto\Queuer\Entities\v1\ProcessInfo $process
      * }
      */
     public function __construct($data = NULL) {
@@ -60,70 +50,6 @@ class Consumer extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.HostInfo host = 2 [json_name = "host"];</code>
-     * @return \GSols\PHPProto\Queuer\Entities\v1\HostInfo|null
-     */
-    public function getHost()
-    {
-        return $this->host;
-    }
-
-    public function hasHost()
-    {
-        return isset($this->host);
-    }
-
-    public function clearHost()
-    {
-        unset($this->host);
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.HostInfo host = 2 [json_name = "host"];</code>
-     * @param \GSols\PHPProto\Queuer\Entities\v1\HostInfo $var
-     * @return $this
-     */
-    public function setHost($var)
-    {
-        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\HostInfo::class);
-        $this->host = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.ProcessInfo process = 3 [json_name = "process"];</code>
-     * @return \GSols\PHPProto\Queuer\Entities\v1\ProcessInfo|null
-     */
-    public function getProcess()
-    {
-        return $this->process;
-    }
-
-    public function hasProcess()
-    {
-        return isset($this->process);
-    }
-
-    public function clearProcess()
-    {
-        unset($this->process);
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.ProcessInfo process = 3 [json_name = "process"];</code>
-     * @param \GSols\PHPProto\Queuer\Entities\v1\ProcessInfo $var
-     * @return $this
-     */
-    public function setProcess($var)
-    {
-        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\ProcessInfo::class);
-        $this->process = $var;
 
         return $this;
     }

@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class RegisterConsumerResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Result result = 1 [json_name = "result"];</code>
+     * Generated from protobuf field <code>string issued_token = 1 [json_name = "issuedToken"];</code>
      */
-    protected $result = null;
+    protected $issued_token = '';
 
     /**
      * Constructor.
@@ -24,7 +24,7 @@ class RegisterConsumerResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \GSols\PHPProto\Queuer\Entities\v1\Result $result
+     *     @type string $issued_token
      * }
      */
     public function __construct($data = NULL) {
@@ -33,33 +33,23 @@ class RegisterConsumerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Result result = 1 [json_name = "result"];</code>
-     * @return \GSols\PHPProto\Queuer\Entities\v1\Result|null
+     * Generated from protobuf field <code>string issued_token = 1 [json_name = "issuedToken"];</code>
+     * @return string
      */
-    public function getResult()
+    public function getIssuedToken()
     {
-        return $this->result;
-    }
-
-    public function hasResult()
-    {
-        return isset($this->result);
-    }
-
-    public function clearResult()
-    {
-        unset($this->result);
+        return $this->issued_token;
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Result result = 1 [json_name = "result"];</code>
-     * @param \GSols\PHPProto\Queuer\Entities\v1\Result $var
+     * Generated from protobuf field <code>string issued_token = 1 [json_name = "issuedToken"];</code>
+     * @param string $var
      * @return $this
      */
-    public function setResult($var)
+    public function setIssuedToken($var)
     {
-        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\Result::class);
-        $this->result = $var;
+        GPBUtil::checkString($var, True);
+        $this->issued_token = $var;
 
         return $this;
     }

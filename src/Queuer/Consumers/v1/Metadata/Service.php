@@ -28,9 +28,10 @@ class Service
         \GSols\PHPProto\Queuer\Consumers\v1\Metadata\Messages::initOnce();
         $pool->internalAddGeneratedFile(
             '
-˜
-!queuer/consumers/v1/service.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.proto"queuer/consumers/v1/messages.proto2ê
-ConsumerService«
+Ã
+!queuer/consumers/v1/service.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.proto"queuer/consumers/v1/messages.proto2•
+ConsumerService¨
+RegisterConsumerInfo0.queuer.consumers.v1.RegisterConsumerInfoRequest1.queuer.consumers.v1.RegisterConsumerInfoResponse"+‚Óä“%:*" /v1/consumers/{consumer_id}/info«
 PublishConsumerStats0.queuer.consumers.v1.PublishConsumerStatsRequest1.queuer.consumers.v1.PublishConsumerStatsResponse",‚Óä“&:*"!/v1/consumers/{consumer_id}/stats(¨
 GetSubscribedStreams0.queuer.consumers.v1.GetSubscribedStreamsRequest1.queuer.consumers.v1.GetSubscribedStreamsResponse"+‚Óä“%#/v1/consumers/{consumer_id}/streamsB„Z/github.com/gsols/goproto/queuer/consumers/v1;v1Ê"GSols\\PHPProto\\Queuer\\Consumers\\v1â+GSols\\PHPProto\\Queuer\\Consumers\\v1\\Metadatabproto3'
         , true);
