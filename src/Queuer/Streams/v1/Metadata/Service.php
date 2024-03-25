@@ -26,16 +26,17 @@ class Service
         \GSols\PHPProto\Queuer\Streams\v1\Metadata\Messages::initOnce();
         $pool->internalAddGeneratedFile(
             '
-·
-queuer/streams/v1/service.protoqueuer.streams.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.protoqueuer/entities/v1/stats.proto queuer/streams/v1/messages.proto2Ö
-StreamServicew
-CreateStream&.queuer.streams.v1.CreateStreamRequest\'.queuer.streams.v1.CreateStreamResponse"Ç”‰ì:*"/v1/streamsw
+»
+queuer/streams/v1/service.protoqueuer.streams.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.protoqueuer/entities/v1/stats.proto queuer/streams/v1/messages.proto2Ï
+
+StreamServicek
+Register".queuer.streams.v1.RegisterRequest#.queuer.streams.v1.RegisterResponse"Ç”‰ì:*"/v1/streamsw
 	GetStream#.queuer.streams.v1.GetStreamRequest$.queuer.streams.v1.GetStreamResponse"Ç”‰ì/v1/streams/{stream_id}Ä
 DeleteStream&.queuer.streams.v1.DeleteStreamRequest\'.queuer.streams.v1.DeleteStreamResponse"Ç”‰ì*/v1/streams/{stream_id}É
-FlushStream%.queuer.streams.v1.FlushStreamRequest&.queuer.streams.v1.FlushStreamResponse"%Ç”‰ì"/v1/streams/{stream_id}:flushë
-PublishMessage(.queuer.streams.v1.PublishMessageRequest).queuer.streams.v1.PublishMessageResponse"*Ç”‰ì$:*"/v1/streams/{stream_id}:publishÖ
-	Subscribe#.queuer.streams.v1.SubscribeRequest$.queuer.streams.v1.SubscribeResponse"+Ç”‰ì%:*" /v1/streams/{stream_id}/messages0Ü
-UpdateState%.queuer.streams.v1.UpdateStateRequest&.queuer.streams.v1.UpdateStateResponse"(Ç”‰ì":*2/v1/streams/{stream_id}:stateä
+FlushStream%.queuer.streams.v1.FlushStreamRequest&.queuer.streams.v1.FlushStreamResponse"%Ç”‰ì"/v1/streams/{stream_id}/flushë
+PublishMessage(.queuer.streams.v1.PublishMessageRequest).queuer.streams.v1.PublishMessageResponse"*Ç”‰ì$:*"/v1/streams/{stream_id}/publishy
+	Subscribe#.queuer.streams.v1.SubscribeRequest$.queuer.streams.v1.SubscribeResponse"Ç”‰ì:*"/v1/streams/messages0Ü
+UpdateState%.queuer.streams.v1.UpdateStateRequest&.queuer.streams.v1.UpdateStateResponse"(Ç”‰ì":*2/v1/streams/{stream_id}/stateä
 GetConsumers&.queuer.streams.v1.GetConsumersRequest\'.queuer.streams.v1.GetConsumersResponse")Ç”‰ì#!/v1/streams/{stream_id}/consumersô
 RegisterConsumer*.queuer.streams.v1.RegisterConsumerRequest+.queuer.streams.v1.RegisterConsumerResponse",Ç”‰ì&:*"!/v1/streams/{stream_id}/consumers™
 UnregisterConsumer,.queuer.streams.v1.UnregisterConsumerRequest-.queuer.streams.v1.UnregisterConsumerResponse"7Ç”‰ì1*//v1/streams/{stream_id}/consumers/{consumer_id}B~Z-github.com/gsols/goproto/queuer/streams/v1;v1  GSols\\PHPProto\\Queuer\\Streams\\v1‚)GSols\\PHPProto\\Queuer\\Streams\\v1\\Metadatabproto3'

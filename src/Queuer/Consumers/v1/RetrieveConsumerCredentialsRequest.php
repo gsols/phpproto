@@ -9,18 +9,14 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>queuer.consumers.v1.PublishConsumerStatsRequest</code>
+ * Generated from protobuf message <code>queuer.consumers.v1.RetrieveConsumerCredentialsRequest</code>
  */
-class PublishConsumerStatsRequest extends \Google\Protobuf\Internal\Message
+class RetrieveConsumerCredentialsRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
      */
     protected $consumer_id = '';
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 2 [json_name = "stats"];</code>
-     */
-    protected $stats = null;
 
     /**
      * Constructor.
@@ -29,7 +25,6 @@ class PublishConsumerStatsRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $consumer_id
-     *     @type \GSols\PHPProto\Queuer\Entities\v1\Stats $stats
      * }
      */
     public function __construct($data = NULL) {
@@ -55,38 +50,6 @@ class PublishConsumerStatsRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->consumer_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 2 [json_name = "stats"];</code>
-     * @return \GSols\PHPProto\Queuer\Entities\v1\Stats|null
-     */
-    public function getStats()
-    {
-        return $this->stats;
-    }
-
-    public function hasStats()
-    {
-        return isset($this->stats);
-    }
-
-    public function clearStats()
-    {
-        unset($this->stats);
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Stats stats = 2 [json_name = "stats"];</code>
-     * @param \GSols\PHPProto\Queuer\Entities\v1\Stats $var
-     * @return $this
-     */
-    public function setStats($var)
-    {
-        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\Stats::class);
-        $this->stats = $var;
 
         return $this;
     }

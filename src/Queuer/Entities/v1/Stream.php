@@ -21,6 +21,14 @@ class Stream extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string name = 2 [json_name = "name", (.validate.rules) = {</code>
      */
     protected $name = '';
+    /**
+     * Generated from protobuf field <code>string connector = 3 [json_name = "connector", (.validate.rules) = {</code>
+     */
+    protected $connector = '';
+    /**
+     * Generated from protobuf field <code>string port = 4 [json_name = "port", (.validate.rules) = {</code>
+     */
+    protected $port = '';
 
     /**
      * Constructor.
@@ -30,6 +38,8 @@ class Stream extends \Google\Protobuf\Internal\Message
      *
      *     @type string $id
      *     @type string $name
+     *     @type string $connector
+     *     @type string $port
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +87,50 @@ class Stream extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string connector = 3 [json_name = "connector", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getConnector()
+    {
+        return $this->connector;
+    }
+
+    /**
+     * Generated from protobuf field <code>string connector = 3 [json_name = "connector", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setConnector($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->connector = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string port = 4 [json_name = "port", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getPort()
+    {
+        return $this->port;
+    }
+
+    /**
+     * Generated from protobuf field <code>string port = 4 [json_name = "port", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPort($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->port = $var;
 
         return $this;
     }

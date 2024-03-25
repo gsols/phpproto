@@ -9,18 +9,14 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>queuer.consumers.v1.RegisterConsumerInfoRequest</code>
+ * Generated from protobuf message <code>queuer.consumers.v1.GetConsumerRequest</code>
  */
-class RegisterConsumerInfoRequest extends \Google\Protobuf\Internal\Message
+class GetConsumerRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
      */
     protected $consumer_id = '';
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.ConsumerInfo consumer_info = 2 [json_name = "consumerInfo"];</code>
-     */
-    protected $consumer_info = null;
 
     /**
      * Constructor.
@@ -29,7 +25,6 @@ class RegisterConsumerInfoRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $consumer_id
-     *     @type \GSols\PHPProto\Queuer\Entities\v1\ConsumerInfo $consumer_info
      * }
      */
     public function __construct($data = NULL) {
@@ -55,38 +50,6 @@ class RegisterConsumerInfoRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->consumer_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.ConsumerInfo consumer_info = 2 [json_name = "consumerInfo"];</code>
-     * @return \GSols\PHPProto\Queuer\Entities\v1\ConsumerInfo|null
-     */
-    public function getConsumerInfo()
-    {
-        return $this->consumer_info;
-    }
-
-    public function hasConsumerInfo()
-    {
-        return isset($this->consumer_info);
-    }
-
-    public function clearConsumerInfo()
-    {
-        unset($this->consumer_info);
-    }
-
-    /**
-     * Generated from protobuf field <code>.queuer.entities.v1.ConsumerInfo consumer_info = 2 [json_name = "consumerInfo"];</code>
-     * @param \GSols\PHPProto\Queuer\Entities\v1\ConsumerInfo $var
-     * @return $this
-     */
-    public function setConsumerInfo($var)
-    {
-        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\ConsumerInfo::class);
-        $this->consumer_info = $var;
 
         return $this;
     }

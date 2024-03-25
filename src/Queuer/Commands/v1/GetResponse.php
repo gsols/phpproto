@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>queuer.commands.v1.SubscribeToCommandsResponse</code>
+ * Generated from protobuf message <code>queuer.commands.v1.GetResponse</code>
  */
-class SubscribeToCommandsResponse extends \Google\Protobuf\Internal\Message
+class GetResponse extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>.queuer.entities.v1.Command command = 1 [json_name = "command"];</code>

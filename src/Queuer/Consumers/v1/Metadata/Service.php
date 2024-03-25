@@ -28,12 +28,18 @@ class Service
         \GSols\PHPProto\Queuer\Consumers\v1\Metadata\Messages::initOnce();
         $pool->internalAddGeneratedFile(
             '
-√
-!queuer/consumers/v1/service.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.proto"queuer/consumers/v1/messages.proto2ï
-ConsumerService®
-RegisterConsumerInfo0.queuer.consumers.v1.RegisterConsumerInfoRequest1.queuer.consumers.v1.RegisterConsumerInfoResponse"+Ç”‰ì%:*" /v1/consumers/{consumer_id}/info´
-PublishConsumerStats0.queuer.consumers.v1.PublishConsumerStatsRequest1.queuer.consumers.v1.PublishConsumerStatsResponse",Ç”‰ì&:*"!/v1/consumers/{consumer_id}/stats(®
-GetSubscribedStreams0.queuer.consumers.v1.GetSubscribedStreamsRequest1.queuer.consumers.v1.GetSubscribedStreamsResponse"+Ç”‰ì%#/v1/consumers/{consumer_id}/streamsBÑZ/github.com/gsols/goproto/queuer/consumers/v1;v1 "GSols\\PHPProto\\Queuer\\Consumers\\v1‚+GSols\\PHPProto\\Queuer\\Consumers\\v1\\Metadatabproto3'
+Ö
+!queuer/consumers/v1/service.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.proto"queuer/consumers/v1/messages.proto2◊
+ConsumerServiceâ
+RegisterConsumer,.queuer.consumers.v1.RegisterConsumerRequest-.queuer.consumers.v1.RegisterConsumerResponse"Ç”‰ì:*"/v1/consumersÖ
+GetConsumer\'.queuer.consumers.v1.GetConsumerRequest(.queuer.consumers.v1.GetConsumerResponse"#Ç”‰ì/v1/consumers/{consumer_id}£
+GetAuthorizedConsumers2.queuer.consumers.v1.GetAuthorizedConsumersRequest3.queuer.consumers.v1.GetAuthorizedConsumersResponse" Ç”‰ì/v1/consumers/authorized´
+GetUnauthorizedConsumers4.queuer.consumers.v1.GetUnauthorizedConsumersRequest5.queuer.consumers.v1.GetUnauthorizedConsumersResponse""Ç”‰ì/v1/consumers/unauthorized§
+AuthorizeConsumer-.queuer.consumers.v1.AuthorizeConsumerRequest..queuer.consumers.v1.AuthorizeConsumerResponse"0Ç”‰ì*:*"%/v1/consumers/{consumer_id}/authorize¡
+RetrieveConsumerCredentials7.queuer.consumers.v1.RetrieveConsumerCredentialsRequest8.queuer.consumers.v1.RetrieveConsumerCredentialsResponse"/Ç”‰ì)\'/v1/consumers/{consumer_id}/credentialsù
+PublishConsumerStats0.queuer.consumers.v1.PublishConsumerStatsRequest1.queuer.consumers.v1.PublishConsumerStatsResponse"Ç”‰ì:*"/v1/consumers/stats(¢
+GetConsumerStreams..queuer.consumers.v1.GetConsumerStreamsRequest/.queuer.consumers.v1.GetConsumerStreamsResponse"+Ç”‰ì%#/v1/consumers/{consumer_id}/streams´
+GetSubscribedStreams0.queuer.consumers.v1.GetSubscribedStreamsRequest1.queuer.consumers.v1.GetSubscribedStreamsResponse".Ç”‰ì(&/v1/consumers/{consumer_id}/subscribedBÑZ/github.com/gsols/goproto/queuer/consumers/v1;v1 "GSols\\PHPProto\\Queuer\\Consumers\\v1‚+GSols\\PHPProto\\Queuer\\Consumers\\v1\\Metadatabproto3'
         , true);
 
         static::$is_initialized = true;

@@ -14,7 +14,11 @@ use Google\Protobuf\Internal\GPBUtil;
 class CreateOwnerRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string name = 1 [json_name = "name", (.validate.rules) = {</code>
+     * Generated from protobuf field <code>optional string id = 1 [json_name = "id", (.validate.rules) = {</code>
+     */
+    protected $id = null;
+    /**
+     * Generated from protobuf field <code>string name = 2 [json_name = "name", (.validate.rules) = {</code>
      */
     protected $name = '';
 
@@ -24,6 +28,7 @@ class CreateOwnerRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type string $id
      *     @type string $name
      * }
      */
@@ -33,7 +38,39 @@ class CreateOwnerRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1 [json_name = "name", (.validate.rules) = {</code>
+     * Generated from protobuf field <code>optional string id = 1 [json_name = "id", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getId()
+    {
+        return isset($this->id) ? $this->id : '';
+    }
+
+    public function hasId()
+    {
+        return isset($this->id);
+    }
+
+    public function clearId()
+    {
+        unset($this->id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string id = 1 [json_name = "id", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string name = 2 [json_name = "name", (.validate.rules) = {</code>
      * @return string
      */
     public function getName()
@@ -42,7 +79,7 @@ class CreateOwnerRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1 [json_name = "name", (.validate.rules) = {</code>
+     * Generated from protobuf field <code>string name = 2 [json_name = "name", (.validate.rules) = {</code>
      * @param string $var
      * @return $this
      */

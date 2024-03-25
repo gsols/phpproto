@@ -17,16 +17,16 @@ class StreamServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \GSols\PHPProto\Queuer\Streams\v1\CreateStreamRequest $argument input argument
+     * @param \GSols\PHPProto\Queuer\Streams\v1\RegisterRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function CreateStream(\GSols\PHPProto\Queuer\Streams\v1\CreateStreamRequest $argument,
+    public function Register(\GSols\PHPProto\Queuer\Streams\v1\RegisterRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/queuer.streams.v1.StreamService/CreateStream',
+        return $this->_simpleRequest('/queuer.streams.v1.StreamService/Register',
         $argument,
-        ['\GSols\PHPProto\Queuer\Streams\v1\CreateStreamResponse', 'decode'],
+        ['\GSols\PHPProto\Queuer\Streams\v1\RegisterResponse', 'decode'],
         $metadata, $options);
     }
 

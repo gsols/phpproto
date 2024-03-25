@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>queuer.consumers.v1.RegisterConsumerInfoResponse</code>
+ * Generated from protobuf message <code>queuer.consumers.v1.RegisterConsumerResponse</code>
  */
-class RegisterConsumerInfoResponse extends \Google\Protobuf\Internal\Message
+class RegisterConsumerResponse extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>.queuer.entities.v1.Result result = 1 [json_name = "result"];</code>
