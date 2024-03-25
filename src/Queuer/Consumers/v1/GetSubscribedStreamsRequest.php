@@ -13,6 +13,10 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class GetSubscribedStreamsRequest extends \Google\Protobuf\Internal\Message
 {
+    /**
+     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
+     */
+    protected $consumer_id = '';
 
     /**
      * Constructor.
@@ -20,11 +24,34 @@ class GetSubscribedStreamsRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type string $consumer_id
      * }
      */
     public function __construct($data = NULL) {
         \GSols\PHPProto\Queuer\Consumers\v1\Metadata\Messages::initOnce();
         parent::__construct($data);
+    }
+
+    /**
+     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getConsumerId()
+    {
+        return $this->consumer_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setConsumerId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->consumer_id = $var;
+
+        return $this;
     }
 
 }

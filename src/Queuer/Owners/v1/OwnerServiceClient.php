@@ -45,6 +45,20 @@ class OwnerServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * @param \GSols\PHPProto\Queuer\Owners\v1\GetOwnersRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GetOwners(\GSols\PHPProto\Queuer\Owners\v1\GetOwnersRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/queuer.owners.v1.OwnerService/GetOwners',
+        $argument,
+        ['\GSols\PHPProto\Queuer\Owners\v1\GetOwnersResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * @param \GSols\PHPProto\Queuer\Owners\v1\RegisterConsumerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

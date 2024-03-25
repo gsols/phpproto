@@ -26,22 +26,55 @@ class Messages
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Command::initOnce();
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Stats::initOnce();
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Result::initOnce();
+        \GSols\PHPProto\Queuer\Entities\v1\Metadata\Session::initOnce();
         $pool->internalAddGeneratedFile(
             '
-®
-"queuer/consumers/v1/messages.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.protoqueuer/entities/v1/result.proto"N
-PublishConsumerStatsRequest/
-stats (2.queuer.entities.v1.StatsRstats"R
-PublishConsumerStatsResponse2
-result (2.queuer.entities.v1.ResultRresult"è
-RegisterConsumerInfoRequest)
+ú
+"queuer/consumers/v1/messages.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.protoqueuer/entities/v1/result.proto queuer/entities/v1/session.proto"à
+RegisterConsumerRequestB
+consumer (2.queuer.entities.v1.ConsumerB˙BäRconsumer)
+
+public_key (B
+˙BzÄ R	publicKey"N
+RegisterConsumerResponse2
+result (2.queuer.entities.v1.ResultRresult"?
+GetConsumerRequest)
 consumer_id (	B˙Br∞R
-consumerIdE
-consumer_info (2 .queuer.entities.v1.ConsumerInfoRconsumerInfo"R
-RegisterConsumerInfoResponse2
-result (2.queuer.entities.v1.ResultRresult"
-GetSubscribedStreamsRequest"T
+consumerId"O
+GetConsumerResponse8
+consumer (2.queuer.entities.v1.ConsumerRconsumer"!
+GetUnauthorizedConsumersRequest"^
+ GetUnauthorizedConsumersResponse:
+	consumers (2.queuer.entities.v1.ConsumerR	consumers"
+GetAuthorizedConsumersRequest"\\
+GetAuthorizedConsumersResponse:
+	consumers (2.queuer.entities.v1.ConsumerR	consumers"j
+AuthorizeConsumerRequest)
+consumer_id (	B˙Br∞R
+consumerId#
+owner_id (	B˙Br∞RownerId"O
+AuthorizeConsumerResponse2
+result (2.queuer.entities.v1.ResultRresult"O
+"RetrieveConsumerCredentialsRequest)
+consumer_id (	B˙Br∞R
+consumerId"G
+#RetrieveConsumerCredentialsResponse 
+credentials (Rcredentials"y
+PublishConsumerStatsRequest)
+consumer_id (	B˙Br∞R
+consumerId/
+stats (2.queuer.entities.v1.StatsRstats"R
+PublishConsumerStatsResponse2
+result (2.queuer.entities.v1.ResultRresult"H
+GetSubscribedStreamsRequest)
+consumer_id (	B˙Br∞R
+consumerId"T
 GetSubscribedStreamsResponse4
+streams (2.queuer.entities.v1.StreamRstreams"F
+GetConsumerStreamsRequest)
+consumer_id (	B˙Br∞R
+consumerId"R
+GetConsumerStreamsResponse4
 streams (2.queuer.entities.v1.StreamRstreamsBÑZ/github.com/gsols/goproto/queuer/consumers/v1;v1 "GSols\\PHPProto\\Queuer\\Consumers\\v1‚+GSols\\PHPProto\\Queuer\\Consumers\\v1\\Metadatabproto3'
         , true);
 

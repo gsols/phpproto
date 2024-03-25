@@ -27,7 +27,7 @@ class Service
 ¡
  queuer/messages/v1/service.protoqueuer.messages.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto queuer/entities/v1/message.proto!queuer/messages/v1/messages.proto2ü
 MessageServiceå
-Acknowledge&.queuer.messages.v1.AcknowledgeRequest\'.queuer.messages.v1.AcknowledgeResponse",Ç”‰ì&:*"!/v1/messages/{message_id}:confirmBÅZ.github.com/gsols/goproto/queuer/messages/v1;v1 !GSols\\PHPProto\\Queuer\\Messages\\v1‚*GSols\\PHPProto\\Queuer\\Messages\\v1\\Metadatabproto3'
+Acknowledge&.queuer.messages.v1.AcknowledgeRequest\'.queuer.messages.v1.AcknowledgeResponse",Ç”‰ì&:*"!/v1/messages/{message_id}/confirmBÅZ.github.com/gsols/goproto/queuer/messages/v1;v1 !GSols\\PHPProto\\Queuer\\Messages\\v1‚*GSols\\PHPProto\\Queuer\\Messages\\v1\\Metadatabproto3'
         , true);
 
         static::$is_initialized = true;

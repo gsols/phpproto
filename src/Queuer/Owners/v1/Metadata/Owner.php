@@ -25,12 +25,14 @@ class Owner
         \GSols\PHPProto\Queuer\Owners\v1\Metadata\Messages::initOnce();
         $pool->internalAddGeneratedFile(
             '
- 
-queuer/owners/v1/owner.protoqueuer.owners.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.protoqueuer/entities/v1/owner.protoqueuer/entities/v1/stream.protoqueuer/owners/v1/messages.proto2ò
+¥	
+queuer/owners/v1/owner.protoqueuer.owners.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.protoqueuer/entities/v1/owner.protoqueuer/entities/v1/stream.protoqueuer/owners/v1/messages.proto2Ç
 OwnerServiceq
 CreateOwner$.queuer.owners.v1.CreateOwnerRequest%.queuer.owners.v1.CreateOwnerResponse"Ç”‰ì:*"
 /v1/ownersp
-GetOwner!.queuer.owners.v1.GetOwnerRequest".queuer.owners.v1.GetOwnerResponse"Ç”‰ì/v1/owners/{owner_id}ï
+GetOwner!.queuer.owners.v1.GetOwnerRequest".queuer.owners.v1.GetOwnerResponse"Ç”‰ì/v1/owners/{owner_id}h
+	GetOwners".queuer.owners.v1.GetOwnersRequest#.queuer.owners.v1.GetOwnersResponse"Ç”‰ì
+/v1/ownersï
 RegisterConsumer).queuer.owners.v1.RegisterConsumerRequest*.queuer.owners.v1.RegisterConsumerResponse"*Ç”‰ì$:*"/v1/owners/{owner_id}/consumersÜ
 GetConsumers%.queuer.owners.v1.GetConsumersRequest&.queuer.owners.v1.GetConsumersResponse"\'Ç”‰ì!/v1/owners/{owner_id}/consumersÅ
 ListStreams$.queuer.owners.v1.ListStreamsRequest%.queuer.owners.v1.ListStreamsResponse"%Ç”‰ì/v1/owners/{owner_id}/streamsB{Z,github.com/gsols/goproto/queuer/owners/v1;v1 GSols\\PHPProto\\Queuer\\Owners\\v1‚(GSols\\PHPProto\\Queuer\\Owners\\v1\\Metadatabproto3'

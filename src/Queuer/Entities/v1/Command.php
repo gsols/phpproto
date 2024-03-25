@@ -18,13 +18,25 @@ class Command extends \Google\Protobuf\Internal\Message
      */
     protected $id = '';
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.CommandAction action = 2 [json_name = "action"];</code>
+     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 2 [json_name = "action"];</code>
      */
     protected $action = 0;
     /**
-     * Generated from protobuf field <code>bytes payload = 3 [json_name = "payload"];</code>
+     * Generated from protobuf field <code>optional bytes payload = 3 [json_name = "payload"];</code>
      */
-    protected $payload = '';
+    protected $payload = null;
+    /**
+     * Generated from protobuf field <code>optional bytes output = 4 [json_name = "output"];</code>
+     */
+    protected $output = null;
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp confirmed_at = 5 [json_name = "confirmedAt"];</code>
+     */
+    protected $confirmed_at = null;
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 6 [json_name = "createdAt"];</code>
+     */
+    protected $created_at = null;
 
     /**
      * Constructor.
@@ -35,6 +47,9 @@ class Command extends \Google\Protobuf\Internal\Message
      *     @type string $id
      *     @type int $action
      *     @type string $payload
+     *     @type string $output
+     *     @type \Google\Protobuf\Timestamp $confirmed_at
+     *     @type \Google\Protobuf\Timestamp $created_at
      * }
      */
     public function __construct($data = NULL) {
@@ -65,7 +80,7 @@ class Command extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.CommandAction action = 2 [json_name = "action"];</code>
+     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 2 [json_name = "action"];</code>
      * @return int
      */
     public function getAction()
@@ -74,29 +89,39 @@ class Command extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.CommandAction action = 2 [json_name = "action"];</code>
+     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 2 [json_name = "action"];</code>
      * @param int $var
      * @return $this
      */
     public function setAction($var)
     {
-        GPBUtil::checkEnum($var, \GSols\PHPProto\Queuer\Entities\v1\CommandAction::class);
+        GPBUtil::checkEnum($var, \GSols\PHPProto\Queuer\Entities\v1\Action::class);
         $this->action = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>bytes payload = 3 [json_name = "payload"];</code>
+     * Generated from protobuf field <code>optional bytes payload = 3 [json_name = "payload"];</code>
      * @return string
      */
     public function getPayload()
     {
-        return $this->payload;
+        return isset($this->payload) ? $this->payload : '';
+    }
+
+    public function hasPayload()
+    {
+        return isset($this->payload);
+    }
+
+    public function clearPayload()
+    {
+        unset($this->payload);
     }
 
     /**
-     * Generated from protobuf field <code>bytes payload = 3 [json_name = "payload"];</code>
+     * Generated from protobuf field <code>optional bytes payload = 3 [json_name = "payload"];</code>
      * @param string $var
      * @return $this
      */
@@ -104,6 +129,102 @@ class Command extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, False);
         $this->payload = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bytes output = 4 [json_name = "output"];</code>
+     * @return string
+     */
+    public function getOutput()
+    {
+        return isset($this->output) ? $this->output : '';
+    }
+
+    public function hasOutput()
+    {
+        return isset($this->output);
+    }
+
+    public function clearOutput()
+    {
+        unset($this->output);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bytes output = 4 [json_name = "output"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setOutput($var)
+    {
+        GPBUtil::checkString($var, False);
+        $this->output = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp confirmed_at = 5 [json_name = "confirmedAt"];</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getConfirmedAt()
+    {
+        return $this->confirmed_at;
+    }
+
+    public function hasConfirmedAt()
+    {
+        return isset($this->confirmed_at);
+    }
+
+    public function clearConfirmedAt()
+    {
+        unset($this->confirmed_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp confirmed_at = 5 [json_name = "confirmedAt"];</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setConfirmedAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->confirmed_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 6 [json_name = "createdAt"];</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+    }
+
+    public function hasCreatedAt()
+    {
+        return isset($this->created_at);
+    }
+
+    public function clearCreatedAt()
+    {
+        unset($this->created_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 6 [json_name = "createdAt"];</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setCreatedAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->created_at = $var;
 
         return $this;
     }

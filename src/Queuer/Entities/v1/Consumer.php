@@ -17,6 +17,38 @@ class Consumer extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string id = 1 [json_name = "id", (.validate.rules) = {</code>
      */
     protected $id = '';
+    /**
+     * Generated from protobuf field <code>string version = 2 [json_name = "version", (.validate.rules) = {</code>
+     */
+    protected $version = '';
+    /**
+     * Generated from protobuf field <code>bool is_active = 3 [json_name = "isActive"];</code>
+     */
+    protected $is_active = false;
+    /**
+     * Generated from protobuf field <code>string os = 4 [json_name = "os", (.validate.rules) = {</code>
+     */
+    protected $os = '';
+    /**
+     * Generated from protobuf field <code>string arch = 5 [json_name = "arch", (.validate.rules) = {</code>
+     */
+    protected $arch = '';
+    /**
+     * Generated from protobuf field <code>string ip = 6 [json_name = "ip", (.validate.rules) = {</code>
+     */
+    protected $ip = '';
+    /**
+     * Generated from protobuf field <code>string hostname = 7 [json_name = "hostname", (.validate.rules) = {</code>
+     */
+    protected $hostname = '';
+    /**
+     * Generated from protobuf field <code>string boot_time = 8 [json_name = "bootTime", (.validate.rules) = {</code>
+     */
+    protected $boot_time = '';
+    /**
+     * Generated from protobuf field <code>optional .queuer.entities.v1.Owner owner = 9 [json_name = "owner"];</code>
+     */
+    protected $owner = null;
 
     /**
      * Constructor.
@@ -25,6 +57,14 @@ class Consumer extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $id
+     *     @type string $version
+     *     @type bool $is_active
+     *     @type string $os
+     *     @type string $arch
+     *     @type string $ip
+     *     @type string $hostname
+     *     @type string $boot_time
+     *     @type \GSols\PHPProto\Queuer\Entities\v1\Owner $owner
      * }
      */
     public function __construct($data = NULL) {
@@ -50,6 +90,192 @@ class Consumer extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string version = 2 [json_name = "version", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+
+    /**
+     * Generated from protobuf field <code>string version = 2 [json_name = "version", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setVersion($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->version = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_active = 3 [json_name = "isActive"];</code>
+     * @return bool
+     */
+    public function getIsActive()
+    {
+        return $this->is_active;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_active = 3 [json_name = "isActive"];</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsActive($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_active = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string os = 4 [json_name = "os", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getOs()
+    {
+        return $this->os;
+    }
+
+    /**
+     * Generated from protobuf field <code>string os = 4 [json_name = "os", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setOs($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->os = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string arch = 5 [json_name = "arch", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getArch()
+    {
+        return $this->arch;
+    }
+
+    /**
+     * Generated from protobuf field <code>string arch = 5 [json_name = "arch", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setArch($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->arch = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string ip = 6 [json_name = "ip", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getIp()
+    {
+        return $this->ip;
+    }
+
+    /**
+     * Generated from protobuf field <code>string ip = 6 [json_name = "ip", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setIp($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->ip = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string hostname = 7 [json_name = "hostname", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getHostname()
+    {
+        return $this->hostname;
+    }
+
+    /**
+     * Generated from protobuf field <code>string hostname = 7 [json_name = "hostname", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setHostname($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->hostname = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string boot_time = 8 [json_name = "bootTime", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getBootTime()
+    {
+        return $this->boot_time;
+    }
+
+    /**
+     * Generated from protobuf field <code>string boot_time = 8 [json_name = "bootTime", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBootTime($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->boot_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .queuer.entities.v1.Owner owner = 9 [json_name = "owner"];</code>
+     * @return \GSols\PHPProto\Queuer\Entities\v1\Owner|null
+     */
+    public function getOwner()
+    {
+        return $this->owner;
+    }
+
+    public function hasOwner()
+    {
+        return isset($this->owner);
+    }
+
+    public function clearOwner()
+    {
+        unset($this->owner);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .queuer.entities.v1.Owner owner = 9 [json_name = "owner"];</code>
+     * @param \GSols\PHPProto\Queuer\Entities\v1\Owner $var
+     * @return $this
+     */
+    public function setOwner($var)
+    {
+        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\Owner::class);
+        $this->owner = $var;
 
         return $this;
     }

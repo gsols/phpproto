@@ -22,7 +22,7 @@ class Result extends \Google\Protobuf\Internal\Message
      */
     protected $message = '';
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Code code = 3 [json_name = "code"];</code>
+     * Generated from protobuf field <code>uint32 code = 3 [json_name = "code"];</code>
      */
     protected $code = 0;
 
@@ -87,7 +87,7 @@ class Result extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Code code = 3 [json_name = "code"];</code>
+     * Generated from protobuf field <code>uint32 code = 3 [json_name = "code"];</code>
      * @return int
      */
     public function getCode()
@@ -96,13 +96,13 @@ class Result extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Code code = 3 [json_name = "code"];</code>
+     * Generated from protobuf field <code>uint32 code = 3 [json_name = "code"];</code>
      * @param int $var
      * @return $this
      */
     public function setCode($var)
     {
-        GPBUtil::checkEnum($var, \GSols\PHPProto\Queuer\Entities\v1\Code::class);
+        GPBUtil::checkUint32($var);
         $this->code = $var;
 
         return $this;

@@ -9,14 +9,18 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>queuer.commands.v1.AckCommandRequest</code>
+ * Generated from protobuf message <code>queuer.commands.v1.AcknowledgeRequest</code>
  */
-class AckCommandRequest extends \Google\Protobuf\Internal\Message
+class AcknowledgeRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string command_id = 1 [json_name = "commandId", (.validate.rules) = {</code>
      */
     protected $command_id = '';
+    /**
+     * Generated from protobuf field <code>bytes payload = 2 [json_name = "payload"];</code>
+     */
+    protected $payload = '';
 
     /**
      * Constructor.
@@ -25,6 +29,7 @@ class AckCommandRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $command_id
+     *     @type string $payload
      * }
      */
     public function __construct($data = NULL) {
@@ -50,6 +55,28 @@ class AckCommandRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->command_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bytes payload = 2 [json_name = "payload"];</code>
+     * @return string
+     */
+    public function getPayload()
+    {
+        return $this->payload;
+    }
+
+    /**
+     * Generated from protobuf field <code>bytes payload = 2 [json_name = "payload"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPayload($var)
+    {
+        GPBUtil::checkString($var, False);
+        $this->payload = $var;
 
         return $this;
     }
