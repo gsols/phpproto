@@ -30,7 +30,7 @@ jobs:
           submodules: 'true'
 
       - name: Install Protoc
-        uses: arduino/setup-protoc@v2
+        uses: arduino/setup-protoc@v3
 
       # cache php dependencies
       - uses: actions/cache@v4
