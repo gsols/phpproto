@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.0](https://github.com/gsols/phpproto/compare/v0.0.3...v0.1.0) (2024-03-25)
+
+
+### Features
+
+* update [gsols/proto-apis@e041bc5d50d5be8e7d57b8047bb84d42b8dc52c7] ([d404be0](https://github.com/gsols/phpproto/commit/d404be07750efd03a77d0d79bdb89ef88eec9fcc))
+
+
+### Miscellaneous Chores
+
+* **deps:** bump actions/cache from 3 to 4 ([d7dcb16](https://github.com/gsols/phpproto/commit/d7dcb16aca42f73a606ac48e1938b7e11e8cea70))
+* **deps:** bump arduino/setup-protoc from 2 to 3 ([62d220c](https://github.com/gsols/phpproto/commit/62d220c2ba9441fbe0707b44fce7215d9d40e176))
+* **deps:** bump google-github-actions/release-please-action ([447bd46](https://github.com/gsols/phpproto/commit/447bd461ec7e2649f3376be8c5c545e36946d7d8))
+* **deps:** bump peter-evans/create-pull-request from 5 to 6 ([b1256c7](https://github.com/gsols/phpproto/commit/b1256c714f1f6d45617c626a9d6111dafa7208bb))
+
 ## [0.0.3](https://github.com/gsols/phpproto/compare/v0.0.2...v0.0.3) (2023-12-09)
 
 
