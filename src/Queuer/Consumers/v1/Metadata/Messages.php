@@ -29,7 +29,7 @@ class Messages
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Session::initOnce();
         $pool->internalAddGeneratedFile(
             '
-œ
+¸
 "queuer/consumers/v1/messages.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.protoqueuer/entities/v1/result.proto queuer/entities/v1/session.proto"ˆ
 RegisterConsumerRequestB
 consumer (2.queuer.entities.v1.ConsumerBúBŠRconsumer)
@@ -54,6 +54,11 @@ consumerId"O
 consumerId#
 owner_id (	BúBr°RownerId"O
 AuthorizeConsumerResponse2
+result (2.queuer.entities.v1.ResultRresult"G
+DeauthorizeConsumerRequest)
+consumer_id (	BúBr°R
+consumerId"Q
+DeauthorizeConsumerResponse2
 result (2.queuer.entities.v1.ResultRresult"O
 "RetrieveConsumerCredentialsRequest)
 consumer_id (	BúBr°R

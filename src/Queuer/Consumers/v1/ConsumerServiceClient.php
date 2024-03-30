@@ -87,6 +87,20 @@ class ConsumerServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * @param \GSols\PHPProto\Queuer\Consumers\v1\DeauthorizeConsumerRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DeauthorizeConsumer(\GSols\PHPProto\Queuer\Consumers\v1\DeauthorizeConsumerRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/queuer.consumers.v1.ConsumerService/DeauthorizeConsumer',
+        $argument,
+        ['\GSols\PHPProto\Queuer\Consumers\v1\DeauthorizeConsumerResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * @param \GSols\PHPProto\Queuer\Consumers\v1\RetrieveConsumerCredentialsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
