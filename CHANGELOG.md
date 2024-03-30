@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/gsols/phpproto/compare/v0.2.0...v0.3.0) (2024-03-30)
+
+
+### Features
+
+* rollback create command request [gsols/proto-apis@89d48be12e3ccc263d18b3ec74a84f5cd690f37d] ([9e65b71](https://github.com/gsols/phpproto/commit/9e65b71a75e77698b6b9b004d38e054349c1a609))
+
 ## [0.2.0](https://github.com/gsols/phpproto/compare/v0.1.0...v0.2.0) (2024-03-30)
 
 
