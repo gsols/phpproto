@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/gsols/phpproto/compare/v0.1.0...v0.2.0) (2024-03-30)
+
+
+### Features
+
+* add deauthorize rpc [gsols/proto-apis@49cf4c4341a26b3e718c25fe6352f546fcb8876f] ([3355a0f](https://github.com/gsols/phpproto/commit/3355a0f77249cde9f171b120d618d3272bd0604b))
+
 ## [0.1.0](https://github.com/gsols/phpproto/compare/v0.0.3...v0.1.0) (2024-03-25)
 
 
