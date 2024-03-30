@@ -14,21 +14,17 @@ use Google\Protobuf\Internal\GPBUtil;
 class CreateRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 1 [json_name = "action"];</code>
+     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
+     */
+    protected $consumer_id = '';
+    /**
+     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 2 [json_name = "action"];</code>
      */
     protected $action = 0;
     /**
-     * Generated from protobuf field <code>optional bytes payload = 2 [json_name = "payload"];</code>
+     * Generated from protobuf field <code>optional bytes payload = 3 [json_name = "payload"];</code>
      */
     protected $payload = null;
-    /**
-     * Generated from protobuf field <code>optional string consumer_id = 3 [json_name = "consumerId", (.validate.rules) = {</code>
-     */
-    protected $consumer_id = null;
-    /**
-     * Generated from protobuf field <code>optional string stream_id = 4 [json_name = "streamId", (.validate.rules) = {</code>
-     */
-    protected $stream_id = null;
 
     /**
      * Constructor.
@@ -36,10 +32,9 @@ class CreateRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type string $consumer_id
      *     @type int $action
      *     @type string $payload
-     *     @type string $consumer_id
-     *     @type string $stream_id
      * }
      */
     public function __construct($data = NULL) {
@@ -48,7 +43,29 @@ class CreateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 1 [json_name = "action"];</code>
+     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
+     * @return string
+     */
+    public function getConsumerId()
+    {
+        return $this->consumer_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string consumer_id = 1 [json_name = "consumerId", (.validate.rules) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setConsumerId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->consumer_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 2 [json_name = "action"];</code>
      * @return int
      */
     public function getAction()
@@ -57,7 +74,7 @@ class CreateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 1 [json_name = "action"];</code>
+     * Generated from protobuf field <code>.queuer.entities.v1.Action action = 2 [json_name = "action"];</code>
      * @param int $var
      * @return $this
      */
@@ -70,7 +87,7 @@ class CreateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bytes payload = 2 [json_name = "payload"];</code>
+     * Generated from protobuf field <code>optional bytes payload = 3 [json_name = "payload"];</code>
      * @return string
      */
     public function getPayload()
@@ -89,7 +106,7 @@ class CreateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bytes payload = 2 [json_name = "payload"];</code>
+     * Generated from protobuf field <code>optional bytes payload = 3 [json_name = "payload"];</code>
      * @param string $var
      * @return $this
      */
@@ -97,70 +114,6 @@ class CreateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, False);
         $this->payload = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string consumer_id = 3 [json_name = "consumerId", (.validate.rules) = {</code>
-     * @return string
-     */
-    public function getConsumerId()
-    {
-        return isset($this->consumer_id) ? $this->consumer_id : '';
-    }
-
-    public function hasConsumerId()
-    {
-        return isset($this->consumer_id);
-    }
-
-    public function clearConsumerId()
-    {
-        unset($this->consumer_id);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string consumer_id = 3 [json_name = "consumerId", (.validate.rules) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setConsumerId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->consumer_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string stream_id = 4 [json_name = "streamId", (.validate.rules) = {</code>
-     * @return string
-     */
-    public function getStreamId()
-    {
-        return isset($this->stream_id) ? $this->stream_id : '';
-    }
-
-    public function hasStreamId()
-    {
-        return isset($this->stream_id);
-    }
-
-    public function clearStreamId()
-    {
-        unset($this->stream_id);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string stream_id = 4 [json_name = "streamId", (.validate.rules) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setStreamId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->stream_id = $var;
 
         return $this;
     }
