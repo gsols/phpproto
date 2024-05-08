@@ -26,10 +26,13 @@ class Service
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Command::initOnce();
         \GSols\PHPProto\Queuer\Entities\v1\Metadata\Stats::initOnce();
         \GSols\PHPProto\Queuer\Consumers\v1\Metadata\Messages::initOnce();
+        \GSols\PHPProto\Queuer\Consumers\v1\Metadata\Presence::initOnce();
         $pool->internalAddGeneratedFile(
             '
-¥
-!queuer/consumers/v1/service.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.proto"queuer/consumers/v1/messages.proto2Ü
+„
+!queuer/consumers/v1/service.protoqueuer.consumers.v1google/api/field_behavior.protogoogle/protobuf/wrappers.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.protovalidate/validate.proto!queuer/entities/v1/consumer.protoqueuer/entities/v1/stream.proto queuer/entities/v1/message.proto queuer/entities/v1/command.protoqueuer/entities/v1/stats.proto"queuer/consumers/v1/messages.proto"queuer/consumers/v1/presence.proto2à
+PresenceServiceu
+IAmAlive$.queuer.consumers.v1.IAmAliveRequest%.queuer.consumers.v1.IAmAliveResponse"Ç”‰ì:*"/v1/presence/live2Ü
 ConsumerServiceâ
 RegisterConsumer,.queuer.consumers.v1.RegisterConsumerRequest-.queuer.consumers.v1.RegisterConsumerResponse"Ç”‰ì:*"/v1/consumersÖ
 GetConsumer\'.queuer.consumers.v1.GetConsumerRequest(.queuer.consumers.v1.GetConsumerResponse"#Ç”‰ì/v1/consumers/{consumer_id}£

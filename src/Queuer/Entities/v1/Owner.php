@@ -21,6 +21,14 @@ class Owner extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string name = 2 [json_name = "name", (.validate.rules) = {</code>
      */
     protected $name = '';
+    /**
+     * Generated from protobuf field <code>optional int32 consumers = 3 [json_name = "consumers"];</code>
+     */
+    protected $consumers = null;
+    /**
+     * Generated from protobuf field <code>optional int32 streams = 4 [json_name = "streams"];</code>
+     */
+    protected $streams = null;
 
     /**
      * Constructor.
@@ -30,6 +38,8 @@ class Owner extends \Google\Protobuf\Internal\Message
      *
      *     @type string $id
      *     @type string $name
+     *     @type int $consumers
+     *     @type int $streams
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +87,70 @@ class Owner extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 consumers = 3 [json_name = "consumers"];</code>
+     * @return int
+     */
+    public function getConsumers()
+    {
+        return isset($this->consumers) ? $this->consumers : 0;
+    }
+
+    public function hasConsumers()
+    {
+        return isset($this->consumers);
+    }
+
+    public function clearConsumers()
+    {
+        unset($this->consumers);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 consumers = 3 [json_name = "consumers"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setConsumers($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->consumers = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 streams = 4 [json_name = "streams"];</code>
+     * @return int
+     */
+    public function getStreams()
+    {
+        return isset($this->streams) ? $this->streams : 0;
+    }
+
+    public function hasStreams()
+    {
+        return isset($this->streams);
+    }
+
+    public function clearStreams()
+    {
+        unset($this->streams);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 streams = 4 [json_name = "streams"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStreams($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->streams = $var;
 
         return $this;
     }
