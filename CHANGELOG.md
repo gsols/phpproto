@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/gsols/phpproto/compare/v0.3.0...v0.4.0) (2024-05-08)
+
+
+### Features
+
+* add presence channel and unauthorize consumer [gsols/proto-apis@6ff34c0659ea238318c759b327b83d323db97a8a] ([5a1ede6](https://github.com/gsols/phpproto/commit/5a1ede6120c0150a89b76c36bab7bcb4233584e3))
+
 ## [0.3.0](https://github.com/gsols/phpproto/compare/v0.2.0...v0.3.0) (2024-03-30)
 
 
