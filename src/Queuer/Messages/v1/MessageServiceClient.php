@@ -17,6 +17,20 @@ class MessageServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * @param \GSols\PHPProto\Queuer\Messages\v1\GetMessagesRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GetMessages(\GSols\PHPProto\Queuer\Messages\v1\GetMessagesRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/queuer.messages.v1.MessageService/GetMessages',
+        $argument,
+        ['\GSols\PHPProto\Queuer\Messages\v1\GetMessagesResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * @param \GSols\PHPProto\Queuer\Messages\v1\AcknowledgeRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

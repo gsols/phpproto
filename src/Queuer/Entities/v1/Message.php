@@ -25,6 +25,18 @@ class Message extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.queuer.entities.v1.Priority priority = 3 [json_name = "priority"];</code>
      */
     protected $priority = 0;
+    /**
+     * Generated from protobuf field <code>optional .queuer.entities.v1.Stream stream = 4 [json_name = "stream"];</code>
+     */
+    protected $stream = null;
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp acknowledged_at = 5 [json_name = "acknowledgedAt"];</code>
+     */
+    protected $acknowledged_at = null;
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 6 [json_name = "createdAt"];</code>
+     */
+    protected $created_at = null;
 
     /**
      * Constructor.
@@ -35,6 +47,9 @@ class Message extends \Google\Protobuf\Internal\Message
      *     @type string $id
      *     @type string $payload
      *     @type int $priority
+     *     @type \GSols\PHPProto\Queuer\Entities\v1\Stream $stream
+     *     @type \Google\Protobuf\Timestamp $acknowledged_at
+     *     @type \Google\Protobuf\Timestamp $created_at
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +119,102 @@ class Message extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \GSols\PHPProto\Queuer\Entities\v1\Priority::class);
         $this->priority = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .queuer.entities.v1.Stream stream = 4 [json_name = "stream"];</code>
+     * @return \GSols\PHPProto\Queuer\Entities\v1\Stream|null
+     */
+    public function getStream()
+    {
+        return $this->stream;
+    }
+
+    public function hasStream()
+    {
+        return isset($this->stream);
+    }
+
+    public function clearStream()
+    {
+        unset($this->stream);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .queuer.entities.v1.Stream stream = 4 [json_name = "stream"];</code>
+     * @param \GSols\PHPProto\Queuer\Entities\v1\Stream $var
+     * @return $this
+     */
+    public function setStream($var)
+    {
+        GPBUtil::checkMessage($var, \GSols\PHPProto\Queuer\Entities\v1\Stream::class);
+        $this->stream = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp acknowledged_at = 5 [json_name = "acknowledgedAt"];</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getAcknowledgedAt()
+    {
+        return $this->acknowledged_at;
+    }
+
+    public function hasAcknowledgedAt()
+    {
+        return isset($this->acknowledged_at);
+    }
+
+    public function clearAcknowledgedAt()
+    {
+        unset($this->acknowledged_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp acknowledged_at = 5 [json_name = "acknowledgedAt"];</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setAcknowledgedAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->acknowledged_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 6 [json_name = "createdAt"];</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+    }
+
+    public function hasCreatedAt()
+    {
+        return isset($this->created_at);
+    }
+
+    public function clearCreatedAt()
+    {
+        unset($this->created_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 6 [json_name = "createdAt"];</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setCreatedAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->created_at = $var;
 
         return $this;
     }
